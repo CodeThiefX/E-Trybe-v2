@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="../css/main.css" rel="stylesheet" />
+    <link href="../css/accordion.css" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>E-Trybe | Contact</title>
+  </head>
+  <body>
+    <div class="flex px-6 lg:px-20 lg:py-7 py-6 justify-between w-full mx-auto">
+      <div class="w-3/12">
+        <image
+          src="../assets/logo.png"
+          alt="logo"
+          class="lg:w-[170px] w-[100px]"
+        />
+      </div>
+      <nav
+        class="border-2 border-[#0A2F55] rounded-[30px] lg:flex justify-center items-center min-w-fit p-4 w-6/12 hidden"
+      >
+        <a
+          href="../index.html"
+          class="flex-grow text-center font-medium text-lg hover:text-[#e3ad63] text-[#0A2F55]"
+          >Home</a
+        >
+        <a
+          href="../about/"
+          class="flex-grow text-center font-medium text-lg hover:text-[#e3ad63] text-[#0A2F55]"
+          >About</a
+        >
+        <a
+          href="../properties/"
+          class="flex-grow text-center font-medium text-lg hover:text-[#e3ad63] text-[#0A2F55]"
+          >Properties</a
+        >
+        <a
+          href="../services/"
+          class="flex-grow text-center font-medium text-lg hover:text-[#e3ad63] text-[#0A2F55]"
+          >Services</a
+        >
+        <a
+          href="../contact/"
+          class="active flex-grow text-center font-medium text-lg hover:text-[#e3ad63]"
+          >Contact</a
+        >
+      </nav>
+      <div class="w-3/12 flex justify-end">
+        <div class="flex gap-2 items-center">
+          <image
+            src="../assets/user-icon.png"
+            alt="phone"
+            class="lg:w-[30px] w-[16px]"
+          />
+          <a
+            href="../signup/"
+            class="font-medium text-[12px] lg:text-lg text-[#0A2F55] text-nowrap min-w-fit"
+          >
+            Sign up
+          </a>
+          <img
+            src="../assets/hamburger-menu.png"
+            alt=""
+            id="hamburger_addclients"
+            class="cursor-pointer hover:opacity-90 lg:hidden"
+          />
+          <div id="navbar" class="navbar lg:hidden">
+            <img
+              src="../assets/icons8-close.svg"
+              alt=""
+              class="w-[30px] absolute right-5 top-8 hover:cursor-pointer hover:opacity-80"
+              id="closemenu"
+            />
+            <ul
+              class="flex flex-col gap-8 p-8 nav-links text-white h-full justify-center items-center"
+            >
+              <li>
+                <a
+                  href="../index.html"
+                  class="text-lg cursor-pointer hover:opacity-80 flex gap-4"
+                  >Home
+                </a>
+              </li>
+              <li>
+                <a
+                  href="../about/index.html"
+                  class="text-lg cursor-pointer hover:opacity-80 flex gap-4"
+                  >About</a
+                >
+              </li>
+              <li>
+                <a
+                  href="../properties/index.html"
+                  class="text-lg cursor-pointer hover:opacity-80 flex gap-4"
+                  >Properties</a
+                >
+              </li>
+              <li>
+                <a
+                  href="../services/index.html"
+                  class="text-lg cursor-pointer hover:opacity-80 flex gap-4"
+                  >Services</a
+                >
+              </li>
+              <li>
+                <a
+                  href="../contact/index.html"
+                  class="text-lg cursor-pointer hover:opacity-80 flex gap-4"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <section class="px-4 lg:px-20 py-7 lg:py-14">
+      <p
+        class="font-semibold text-[20px] lg:text-[40px] text-center w-full pb-5"
+      >
+        Your feedback helps us improve
+      </p>
+      <p class="font-medium text-[10px] lg:text-2xl text-center">
+        We are here to help you and we’d love to connect with you. We’ll get
+        back in 24h.
+      </p>
+    </section>
+    <section class="py-7 lg:py-14 flex flex-col justify-center items-center">
+      <form class="w-full lg:w-9/12 py-7 lg:py-14">
+        <div
+          class="flex flex-col gap-6 w-full lg:w-7/12 mx-auto lg:shadow-lg lg:shadow-[#00000058] p-6"
+        >
+          <div class="flex justify-between gap-4">
+            <div class="flex flex-col">
+              <label class="font-medium text-[12px] lg:text-[20px]"
+                >First name</label
+              >
+              <input
+                type="text"
+                class="w-full rounded-[14px] h-[46px] lg:h-20 p-3 lg:rounded-[30px] text-[#000000] font-medium text-lg border-2 border-black"
+              />
+            </div>
+            <div class="flex flex-col">
+              <label class="font-medium text-[12px] lg:text-[20px]"
+                >Last name</label
+              >
+              <input
+                type="text"
+                class="w-full rounded-[14px] h-[46px] lg:h-20 p-3 lg:rounded-[30px] text-[#000000] font-medium text-lg border-2 border-black"
+              />
+            </div>
+          </div>
+          <div class="flex flex-col">
+            <label class="font-medium text-[12px] lg:text-[20px]"
+              >Email Address</label
+            >
+            <input
+              type="text"
+              class="w-full rounded-[14px] h-[46px] lg:h-20 p-3 lg:rounded-[30px] text-[#000000] font-medium text-lg border-2 border-black"
+            />
+          </div>
+          <div class="flex flex-col">
+            <label class="font-medium text-[12px] lg:text-[20px]"
+              >Subject</label
+            >
+            <input
+              type="text"
+              class="w-full rounded-[14px] h-[46px] lg:h-20 p-3 lg:rounded-[30px] text-[#000000] font-medium text-lg border-2 border-black"
+              placeholder="Type Here"
+            />
+          </div>
+          <div class="flex flex-col">
+            <label class="font-medium text-[12px] lg:text-[20px]"
+              >Message</label
+            >
+            <textarea
+              class="w-full min-h-20 p-3 rounded-[14px] lg:rounded-[30px] text-[#000000] font-medium text-lg border-2 border-black"
+              placeholder="Type Message Here"
+            ></textarea>
+          </div>
+          <button
+            class="bg-[#0A2F55] w-1/3 h-[38px] lg:h-24 p-3 rounded-[8px] lg:rounded-[30px] text-white font-medium text-[10px] lg:text-lg"
+          >
+            Send Message
+          </button>
+        </div>
+      </form>
+    </section>
+    <section
+      class="px-4 lg:px-20 py-7 lg:py-14 flex flex-row justify-center items-center gap-1 lg:gap-6"
+    >
+      <div
+        class="flex flex-col bg-[#0A2F55] rounded-[30px] justify-center items-center w-full lg:w-1/3 gap-3 lg:gap-5 p-3 lg:p-5"
+      >
+        <image src="../assets/message-icon.png" class="w-[18px] lg:w-[48px]" />
+        <p class="font-semibold text-[8px] lg:text-[20px] text-white">
+          Social Media
+        </p>
+        <div class="flex gap-2">
+          <image
+            src="../assets/facebook-icon.png"
+            class="w-[12px] lg:w-[32px]"
+          />
+          <image
+            src="../assets/twitter-icon.png"
+            class="w-[12px] lg:w-[32px]"
+          />
+          <image
+            src="../assets/instagram-icon.png"
+            class="w-[12px] lg:w-[32px]"
+          />
+          <image src="../assets/tiktok-icon.png" class="w-[12px] lg:w-[32px]" />
+        </div>
+      </div>
+      <div
+        class="flex flex-col bg-[#0A2F55] rounded-[30px] justify-center items-center w-full lg:w-1/3 gap-3 lg:gap-5 p-3 lg:p-5"
+      >
+        <image src="../assets/phone-icon.png" class="w-[18px] lg:w-[48px]" />
+        <p class="font-semibold text-[8px] lg:text-[20px] text-white">
+          Phone Number
+        </p>
+        <p class="font-medium text-[8px] lg:text-[20px] text-white">
+          +234 567 8901 234
+        </p>
+      </div>
+      <div
+        class="flex flex-col bg-[#0A2F55] rounded-[30px] justify-center items-center w-full lg:w-1/3 gap-3 lg:gap-5 p-3 lg:p-5"
+      >
+        <image src="../assets/phone-icon.png" class="w-[18px] lg:w-[48px]" />
+        <p class="font-semibold text-[8px] lg:text-[20px] text-white">
+          Email Support
+        </p>
+        <p class="font-medium text-[8px] lg:text-[20px] text-white">
+          etrybe@gmail.com
+        </p>
+      </div>
+    </section>
+    <footer class="w-full px-4 lg:px-20 p-14">
+      <div class="flex flex-col lg:flex-row w-full">
+        <div class="flex-grow w-2/12">
+          <img src="../assets/logo.png" />
+        </div>
+        <div class="flex flex-col flex-grow gap-6">
+          <div class="flex flex-col lg:flex-row gap-6">
+            <a class="text-[#0A2F55]" href="../index.html">Home</a>
+            <a class="text-[#0A2F55]" href="../about/">About</a>
+            <a class="text-[#0A2F55]" href="../properties/">Properties</a>
+            <a class="text-[#0A2F55]" href="../services/">Services</a>
+            <a class="text-[#0A2F55]" href="../contact/">Contact</a>
+          </div>
+          <div class="flex flex-col lg:flex-row gap-6">
+            <a class="text-[#0A2F55]">Terms and Conditions</a>
+            <a class="text-[#0A2F55]">Privacy Policy</a>
+            <a class="text-[#0A2F55]">Support</a>
+          </div>
+        </div>
+        <div class="flex w-2/12 min-w-fit justify-end gap-4">
+          <img src="../assets/fb-icon.png" class="w-[32px] h-[32px]" />
+          <img src="../assets/tw-icon.png" class="w-[32px] h-[32px]" />
+          <img src="../assets/ig-icon.png" class="w-[32px] h-[32px]" />
+          <img src="../assets/tk-icon.png" class="w-[32px] h-[32px]" />
+        </div>
+      </div>
+      <hr class="my-14 border-black border-1" />
+      <p class="font-normal text-[10px] lg:text-[24px] text-center footer-text">
+        Copyright ©2024. All Rights Reserved
+      </p>
+    </footer>
+    <script src="../js/addclients.js"></script>
+  </body>
+</html>

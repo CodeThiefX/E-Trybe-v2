@@ -1,0 +1,278 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap");
+
+html,
+body {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  width: 100%;
+  max-width: 1440px;
+
+  margin: 0 auto;
+}
+
+.active {
+  color: #e3ad63;
+}
+
+.footer-text {
+  font-family: "Poppins", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+::placeholder {
+  font-family: "Monserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  color: #999999;
+  opacity: 1;
+}
+
+:-ms-input-placeholder {
+  font-family: "Monserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  color: #999999;
+  opacity: 1;
+}
+
+::-ms-input-placeholder {
+  font-family: "Monserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  color: #999999;
+  opacity: 1;
+}
+
+/* Mozilla Firefox */
+input::-moz-placeholder {
+  font-family: "Monserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  color: #999999;
+  opacity: 1;
+}
+
+/* Other browsers */
+input:-moz-placeholder {
+  font-family: "Monserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  color: #999999;
+  opacity: 1;
+}
+
+.addclients_page {
+  display: none;
+}
+
+.display {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 1rem;
+  gap: 1rem;
+  width: 100%;
+}
+
+.client_info {
+  margin-top: 2rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.75rem;
+}
+
+label {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.names {
+  display: flex;
+  flex: 1;
+  gap: 1rem;
+}
+
+.names div {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+}
+
+.names input,
+.email input,
+.number input {
+  border-radius: 1rem;
+  padding: 1rem;
+  border: 1px solid #000;
+  width: 100%;
+  margin-top: 0.4rem;
+}
+
+.submit-btn {
+  padding: 1rem 3rem;
+  border-radius: 0.625rem;
+  background-color: #0a2f55;
+  color: white;
+  font-weight: 500;
+  font-size: 1.5rem;
+}
+
+.submit-btn:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+.hamburger {
+  cursor: pointer;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 30px;
+  height: 25px;
+  right: 0;
+  z-index: 20; /* Ensure this is above the navbar's z-index */
+}
+
+.bar {
+  width: 100%;
+  height: 3px;
+  background-color: black;
+  transition: all 0.3s ease;
+}
+
+/* Add this new style for the .active class transformation */
+
+.hamburger.active .bar {
+  background-color: #fff; /* Change to white (or any contrasting color) */
+}
+
+.hamburger.active .bar:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.hamburger.active .bar:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.active .bar:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -5px);
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100vw;
+  background-color: black;
+  z-index: 3;
+  transform: translateY(-100%); /* Start hidden above the screen */
+  opacity: 0; /* Start as invisible */
+  transition: transform 0.5s ease, opacity 0.5s ease; /* Animate these properties */
+}
+
+/* State of the navbar when it's supposed to be visible */
+.navbar.open {
+  transform: translateY(0); /* Move into view */
+  opacity: 1;
+}
+
+.navbar ul li a:hover {
+  cursor: pointer;
+}
+
+.sidebar {
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.hover-background:hover {
+  cursor: pointer;
+  background: #0a2f55;
+  border-radius: 20px;
+  color: white;
+}
+
+.done {
+  background-color: #0a2f55;
+  color: white;
+}
+
+/* Specific styles for not-done tiles */
+.not-done {
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+}
+
+.slider {
+  position: relative;
+  width: 100%; /* or any specific width */
+  height: 320px;
+  overflow: hidden;
+}
+
+.slide {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 100%; /* start offscreen */
+  opacity: 0;
+  transition: all 0.5s ease;
+  object-fit: cover;
+}
+
+.slide.active {
+  left: 0; /* move into view */
+  opacity: 1;
+}
+
+.prev,
+.next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  border: none;
+  cursor: pointer;
+  width: 40px;
+}
+
+.prev {
+  left: 10px;
+}
+
+.next {
+  right: 10px;
+}
+
+.dots {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  bottom: 10px;
+}
+
+.dot {
+  height: 10px;
+  width: 10px;
+  margin: 0 5px;
+  background-color: gray;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.dot.active {
+  background-color: white;
+}
+
+@media screen and (min-width: 1024px) {
+  label {
+    font-size: 1.5rem;
+  }
+}

@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="../../css/main.css" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>E-Trybe | Profile</title>
+  </head>
+  <body>
+    <div class="w-full lg:flex h-full">
+      <div
+        id="sidebar"
+        class="sidebar pl-4 py-8 lg:flex flex-col justify-between pr-8 font-medium text-[20px] lg:w-[300px] hidden items-center h-screen"
+      >
+        <div>
+          <img src="../../assets/logo.png" alt="" class="w-[120px]" />
+        </div>
+        <div class="flex flex-col h-full gap-4 mt-8 pl-4">
+          <div class="flex gap-6 px-8 py-4 rounded-[20px] hover-background">
+            <img src="../../assets/overview-black.svg" alt="" />
+            <a href="../index.html">Overview</a>
+          </div>
+          <div class="flex gap-6 text-black py-4 px-8 hover-background">
+            <img src="../../assets/property-black.svg" alt="" />
+            <a href="../properties/index.html">Property</a>
+          </div>
+          <div class="flex gap-6 px-8 hover-background py-4">
+            <img src="../../assets/clients-black.svg" alt="" />
+            <a href="../clients/clients.html">Clients</a>
+          </div>
+          <div
+            class="flex gap-6 px-8 hover-background py-4 bg-[#0A2F55] rounded-[20px] text-white hover:cursor-pointer hover:opacity-95"
+          >
+            <img src="../../assets/profile-white.svg" alt="" />
+            <a href="./profile.html">Profile</a>
+          </div>
+        </div>
+        <div class="flex flex-col gap-8">
+          <div class="flex gap-6 items-center px-8">
+            <img src="../../assets/settings-black.svg" alt="" />
+            <a>Settings</a>
+          </div>
+          <div class="flex gap-6 items-center px-8">
+            <img src="../../assets/logout-black.svg" alt="" />
+            <a class="whitespace-nowrap">Log Out</a>
+          </div>
+        </div>
+      </div>
+      <div class="flex-grow">
+        <div
+          class="flex lg:hidden justify-between items-center px-4 lg:py-9 py-4"
+        >
+          <div class="lg:hidden">
+            <img src="../../assets/logo.png" alt="" class="w-[100px]" />
+          </div>
+          <div>
+            <img
+              src="../../assets/hamburger.png"
+              alt=""
+              id="hamburger_addclients"
+              class="cursor-pointer hover:opacity-90"
+            />
+
+            <div id="navbar" class="navbar lg:hidden">
+              <img
+                src="../../assets/icons8-close.svg"
+                alt=""
+                class="w-[30px] absolute right-5 top-8 hover:cursor-pointer hover:opacity-80"
+                id="closemenu"
+              />
+              <ul
+                class="flex flex-col gap-8 p-8 nav-links text-white h-full justify-center items-center"
+              >
+                <li>
+                  <a
+                    href="../index.html"
+                    class="text-lg cursor-pointer hover:opacity-80 flex gap-4"
+                    ><img
+                      src="../../assets/overview-white.svg"
+                      alt=""
+                    />Overview
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="../properties/index.html"
+                    class="text-lg cursor-pointer hover:opacity-80 flex gap-4"
+                    ><img
+                      src="../../assets/profile-white.svg"
+                      alt=""
+                    />Properties</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="../clients/clients.html"
+                    class="text-lg cursor-pointer hover:opacity-80 flex gap-4"
+                    ><img
+                      src="../../assets/clients-white.svg"
+                      alt=""
+                    />Clients</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="../profile/profile.html"
+                    class="text-lg cursor-pointer hover:opacity-80 flex gap-4"
+                    ><img
+                      src="../../assets/profile-white.svg"
+                      alt=""
+                    />Profile</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex flex-col lg:flex-row gap-6 lg:py-8 lg:px-8 px-4 py-6">
+          <div
+            class="border-2 border-black rounded-xl w-full max-w-[470px] mx-auto pt-10 pb-20 flex flex-col gap-4 h-[800px]"
+          >
+            <div class="flex flex-col gap-6 items-center">
+              <img
+                src="../../assets/taiwo-omotola-profile-pic.svg"
+                alt="Taiwo Omotola"
+                class="w-[180px] object-contain h-auto"
+              />
+              <p class="font-medium lg:text-[32px]">Taiwo Omotola</p>
+            </div>
+            <hr class="h-[2px] bg-black w-full" />
+            <div class="font-medium mt-6">
+              <div class="flex flex-col gap-6 px-4">
+                <p class="flex gap-6 lg:text-xl">
+                  <span class="text-[#00000099]">City</span>
+                  <span>Manchester</span>
+                </p>
+                <p class="flex gap-6 lg:text-xl items-center justify-start">
+                  <span class="text-[#00000099]">State</span>
+                  <span>Manchester</span>
+                </p>
+                <p class="flex gap-6 lg:text-xl items-center justify-start">
+                  <span class="text-[#00000099]">Country</span>
+                  <span>England</span>
+                </p>
+                <p class="flex gap-6 lg:text-xl items-center justify-start">
+                  <span class="text-[#00000099]">Phone</span>
+                  <span>+234 567 8901 2345</span>
+                </p>
+                <p class="flex gap-6 lg:text-xl items-center justify-start">
+                  <span class="text-[#00000099]">Email</span>
+                  <span>theomotola@gmail.com</span>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="border-2 rounded-xl border-black w-full lg:max-w-[780px] mx-auto max-w-[470px] mb-10 h-[800px]"
+          >
+            <p class="lg:text-[32px] font-medium p-4">Realtor details</p>
+            <hr class="h-[2px] bg-black w-full" />
+            <div class="flex gap-2 px-4 py-6">
+              <div class="flex flex-col gap-4">
+                <p class="flex gap-4 items-center">
+                  <span class="font-semibold lg:text-2xl">City</span>
+                  <span class="font-medium"
+                    >3A, Old Trafford, Manchester, England.</span
+                  >
+                </p>
+                <p class="flex gap-4 items-center">
+                  <span class="font-semibold lg:text-2xl">Property</span>
+                  <span class="font-medium">Old Trafford</span>
+                </p>
+              </div>
+            </div>
+            <div class="px-6 w-[95%] mx-auto">
+              <img
+                src="../../assets/property-image3.svg"
+                alt=""
+                class="w-full h-aut0"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="../../js/addclients.js"></script>
+  </body>
+</html>

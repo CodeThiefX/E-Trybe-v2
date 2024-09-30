@@ -1,0 +1,11 @@
+.check-label {
+  color: #000;
+  border: 0.1rem solid #000;
+  background-color: none;
+}
+
+.check-label-selected {
+  color: #fff;
+  background-color: #0a2f55;
+  border: none;
+}

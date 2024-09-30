@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="../css/main.css" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>E-Trybe | Services</title>
+  </head>
+  <body>
+    <div class="flex px-6 lg:px-20 lg:py-7 py-6 justify-between w-full mx-auto">
+      <div class="w-3/12">
+        <image
+          src="../assets/logo.png"
+          alt="logo"
+          class="lg:w-[170px] w-[100px]"
+        />
+      </div>
+      <nav
+        class="border-2 border-[#0A2F55] rounded-[30px] lg:flex justify-center items-center min-w-fit p-4 w-6/12 hidden"
+      >
+        <a
+          href="../index.html"
+          class="flex-grow text-center font-medium text-lg hover:text-[#e3ad63] text-[#0A2F55]"
+          >Home</a
+        >
+        <a
+          href="../about/"
+          class="flex-grow text-center font-medium text-lg hover:text-[#e3ad63] text-[#0A2F55]"
+          >About</a
+        >
+        <a
+          href="../properties/"
+          class="flex-grow text-center font-medium text-lg hover:text-[#e3ad63] text-[#0A2F55]"
+          >Properties</a
+        >
+        <a
+          href="../services/"
+          class="active flex-grow text-center font-medium text-lg hover:text-[#e3ad63]"
+          >Services</a
+        >
+        <a
+          href="../contact/"
+          class="flex-grow text-center font-medium text-lg hover:text-[#e3ad63] text-[#0A2F55]"
+          >Contact</a
+        >
+      </nav>
+      <div class="w-3/12 flex justify-end">
+        <div class="flex gap-2 items-center">
+          <image
+            src="../assets/user-icon.png"
+            alt="phone"
+            class="lg:w-[30px] w-[16px]"
+          />
+          <a
+            href="../signup/"
+            class="font-medium text-[12px] lg:text-lg text-[#0A2F55] text-nowrap min-w-fit"
+          >
+            Sign up
+          </a>
+          <img
+            src="../assets/hamburger-menu.png"
+            alt=""
+            id="hamburger_addclients"
+            class="cursor-pointer hover:opacity-90 lg:hidden"
+          />
+          <div id="navbar" class="navbar lg:hidden">
+            <img
+              src="../assets/icons8-close.svg"
+              alt=""
+              class="w-[30px] absolute right-5 top-8 hover:cursor-pointer hover:opacity-80"
+              id="closemenu"
+            />
+            <ul
+              class="flex flex-col gap-8 p-8 nav-links text-white h-full justify-center items-center"
+            >
+              <li>
+                <a
+                  href="../index.html"
+                  class="text-lg cursor-pointer hover:opacity-80 flex gap-4"
+                  >Home
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-lg cursor-pointer hover:opacity-80 flex gap-4"
+                  >About</a
+                >
+              </li>
+              <li>
+                <a
+                  href="../properties/index.html"
+                  class="text-lg cursor-pointer hover:opacity-80 flex gap-4"
+                  >Properties</a
+                >
+              </li>
+              <li>
+                <a
+                  href="../services/index.html"
+                  class="text-lg cursor-pointer hover:opacity-80 flex gap-4"
+                  >Services</a
+                >
+              </li>
+              <li>
+                <a
+                  href="../contact/index.html"
+                  class="text-lg cursor-pointer hover:opacity-80 flex gap-4"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <section class="px-4 lg:px-20 py-7 lg:py-14">
+      <p
+        class="font-semibold text-[20px] lg:text-[40px] text-center w-full pb-5"
+      >
+        Our Key Services
+      </p>
+      <p class="font-medium text-[10px] lg:text-2xl text-center">
+        Discover a comprehensive suite of services tailored to meet property
+        needs, including buying, renting, property management, investment
+        advice, valuation, market analysis, legal assistance and more.
+      </p>
+    </section>
+    <section
+      class="px-4 lg:px-20 py-7 lg:py-14 grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-12"
+    >
+      <div class="w-full">
+        <img src="../assets/services-1.png" alt="services" />
+      </div>
+      <div class="w-full flex flex-col gap-4 justify-center">
+        <p
+          class="font-semibold text-[16px] lg:text-[48px] lg:leading-[58.51px]"
+        >
+          Buy properties on the go
+        </p>
+        <p class="font-medium text-[12px] lg:text-[28px]">
+          Discover properties across the globe. Residential properties, lands,
+          commercial buildings, and penthouses. We have them all!
+        </p>
+        <button
+          class="font-medium text-[10px] lg:text-2xl rounded-[30px] bg-[#E3AD63] p-3 h-[36px] lg:h-[86px] w-1/3"
+        >
+          Buy property
+        </button>
+      </div>
+      <div class="w-full lg:hidden">
+        <img src="../assets/services-2.png" alt="services" />
+      </div>
+      <div class="w-full flex flex-col gap-4 justify-center">
+        <p
+          class="font-semibold text-[16px] lg:text-[48px] lg:leading-[58.51px]"
+        >
+          Sell like a pro
+        </p>
+        <p class="font-medium text-[12px] lg:text-[28px]">
+          Access professional realtors, lawyers, and full-time sales experts who
+          will provide you with tips and help close a deal like a boss.
+        </p>
+        <button
+          class="font-medium text-[10px] lg:text-2xl rounded-[30px] bg-[#E3AD63] p-3 h-[36px] lg:h-[86px] w-1/3"
+        >
+          Sell property
+        </button>
+      </div>
+      <div class="w-full hidden lg:block">
+        <img src="../assets/services-2.png" alt="services" />
+      </div>
+      <div class="w-full">
+        <img src="../assets/services-3.png" alt="services" />
+      </div>
+      <div class="w-full flex flex-col gap-4 justify-center">
+        <p
+          class="font-semibold text-[16px] lg:text-[48px] lg:leading-[58.51px]"
+        >
+          Earn extra cash
+        </p>
+        <p class="font-medium text-[12px] lg:text-[28px]">
+          Earn commission on every property you sell. Zero realtor experience
+          needed, just your network and a rewarding financial journey.
+        </p>
+        <button
+          class="font-medium text-[10px] lg:text-2xl rounded-[30px] bg-[#E3AD63] p-3 h-[36px] lg:h-[86px] w-1/3"
+        >
+          Start now
+        </button>
+      </div>
+      <div class="w-full lg:hidden">
+        <img src="../assets/services-4.png" alt="services" />
+      </div>
+      <div class="w-full flex flex-col gap-4 justify-center">
+        <p
+          class="font-semibold text-[16px] lg:text-[48px] lg:leading-[58.51px]"
+        >
+          Learn as you earn
+        </p>
+        <p class="font-medium text-[12px] lg:text-[28px]">
+          Selling just got easier! Gain access to learning resources, and sales
+          materials that will give you an edge when pitching to your network.
+        </p>
+        <button
+          class="font-medium text-[10px] lg:text-2xl rounded-[30px] bg-[#E3AD63] p-3 h-[36px] lg:h-[86px] w-1/3"
+        >
+          Get started
+        </button>
+      </div>
+      <div class="w-full hidden lg:block">
+        <img src="../assets/services-4.png" alt="services" />
+      </div>
+    </section>
+    <section class="px-4 lg:px-20 p-14">
+      <div
+        class="bg-[#0A2F55] rounded-[30px] flex flex-col justify-center items-center py-7 lg:py-14 gap-10"
+      >
+        <p
+          class="font-semibold text-[16px] lg:text-[40px] text-white text-center"
+        >
+          Join our team and be a part of our mission
+        </p>
+        <button
+          class="bg-[#E3AD63] font-medium text-[10px] lg:text-[20px] p-6 px-10 rounded-[30px]"
+        >
+          View Openings
+        </button>
+      </div>
+    </section>
+    <footer class="w-full px-4 lg:px-20 p-14">
+      <div class="flex flex-col lg:flex-row w-full">
+        <div class="flex-grow w-2/12">
+          <img src="../assets/logo.png" />
+        </div>
+        <div class="flex flex-col flex-grow gap-6">
+          <div class="flex flex-col lg:flex-row gap-6">
+            <a class="text-[#0A2F55]" href="../index.html">Home</a>
+            <a class="text-[#0A2F55]" href="../about/">About</a>
+            <a class="text-[#0A2F55]" href="../properties/">Properties</a>
+            <a class="text-[#0A2F55]" href="../services/">Services</a>
+            <a class="text-[#0A2F55]" href="../contact/">Contact</a>
+          </div>
+          <div class="flex flex-col lg:flex-row gap-6">
+            <a class="text-[#0A2F55]">Terms and Conditions</a>
+            <a class="text-[#0A2F55]">Privacy Policy</a>
+            <a class="text-[#0A2F55]">Support</a>
+          </div>
+        </div>
+        <div class="flex w-2/12 min-w-fit justify-end gap-4">
+          <img src="../assets/fb-icon.png" class="w-[32px] h-[32px]" />
+          <img src="../assets/tw-icon.png" class="w-[32px] h-[32px]" />
+          <img src="../assets/ig-icon.png" class="w-[32px] h-[32px]" />
+          <img src="../assets/tk-icon.png" class="w-[32px] h-[32px]" />
+        </div>
+      </div>
+      <hr class="my-14 border-black border-1" />
+      <p class="font-normal text-[10px] lg:text-[24px] text-center footer-text">
+        Copyright ©2024. All Rights Reserved
+      </p>
+    </footer>
+    <script src="../js/addclients.js"></script>
+  </body>
+</html>
